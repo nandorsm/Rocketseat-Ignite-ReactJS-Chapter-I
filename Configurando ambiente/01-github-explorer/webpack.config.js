@@ -12,9 +12,12 @@ module.export = {
     module: {
         rules: [
             {
-                teste: /\.jsx$/,
+                test: /\.jsx$/,
                 exclude: /node_modules/,
+                use: 'babel-loader',
             }
         ],
-    }
+    },
+
+    mode: 'development'
 };
